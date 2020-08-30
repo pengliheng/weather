@@ -11,6 +11,5 @@ services:
     expose:
         - "3000"
     command: "npx serve -s build"
-    # command: "npx serve -s build"
     ports:
-        - 3000:3000 # 本地端口:容器端口
+        - 3000:3000

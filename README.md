@@ -1,4 +1,6 @@
-## Running Rommend
+# 2359-media Take-Home Technical Assessment FE
+
+## Running Commend
 
 ```
 yarn

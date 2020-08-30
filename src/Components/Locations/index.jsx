@@ -13,9 +13,6 @@ export default function Locations({cameras, handleLocationClickProp}) {
                     <span>
                         area: {camera.forecast.area}
                     </span>
-                    {/* <span>
-                        forecast: {camera.forecast.forecast}
-                    </span> */}
                     <span>
                         latitude: {camera.location.latitude}
                     </span>
