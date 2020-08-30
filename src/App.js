@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import './App.scss';
-// import Date from './Components/Date'
-// import Time from './Components/Time'
+import Api from './Api'
 import Locations from './Components/Locations'
 import Screenshot from './Components/Screenshot'
 import Weather from './Components/Weather'
-import Api from './Api'
+import './App.scss';
 
 function reserveGeo(cameras, weatherForecast) {
   return cameras.map(cameras => {
