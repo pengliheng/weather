@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  react:
+    restart: always
+    build:
+      context: "."
+    environment:
+      - PORT=3000
+      - HOST=0.0.0.0
+    expose:
+        - "3000"
+    command: "npx serve -s build"
+    # command: "npx serve -s build"
+    ports:
+        - 3000:3000 # 本地端口:容器端口
