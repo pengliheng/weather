@@ -1,0 +1,56 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.App .container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 220px);
+}
+.App .container .header {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  align-items: center;
+}
+.App .container .header .date {
+  flex: 1;
+}
+.App .container .header .time {
+  flex: 1;
+}
+.App .container .body {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.App .container .body .Locations {
+  flex: 0 0 100%;
+}
+.App .container .body .Weather {
+  margin-left: 20px;
+}
+.App .container .Screenshot {
+  margin-top: 20px;
+}
+.App > .Weather {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+  .App .container {
+    width: 100%;
+  }
+  .App .container .body {
+    flex-direction: column;
+  }
+  .App .container .body .Weather {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}

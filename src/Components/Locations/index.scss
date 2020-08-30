@@ -1,0 +1,57 @@
+.Locations {
+    // height: 400px;
+    min-height: 400px;
+    max-height: 400px;
+    overflow: auto;
+    background: rgba(255, 0, 0, 0.05);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .camera {
+        margin: 5px;
+        width: calc(25%  - 10px);
+        height: 80px;
+        background-size: cover;
+        cursor: pointer;
+        // background-repeat: no-repeat;
+        // color: #fff;
+        // word-break: break-all;
+        display: inline-flex;
+        // align-items: center;
+        flex-direction: column;
+        // img {
+        //     width: 100%;
+        //     height: auto;
+        // }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .Locations {
+        .camera {
+            margin: 5px;
+            width: calc(33%  - 10px);
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    .Locations {
+        .camera {
+            margin: 5px;
+            width: calc(50%  - 10px);
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .Locations {
+        .camera {
+            margin: 5px;
+            width: calc(100%  - 10px);
+        }
+    }
+}
